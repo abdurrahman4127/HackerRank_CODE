@@ -4,18 +4,19 @@ using namespace std;
 
 int countingValleys(int steps, string path) 
 {
-    int level = 0, valleyes = 0;
+    int level = 0, valleyes = 0;  // initially, sea-level is 0; also number of valleys is 0
     
-    for(int i = 0; i < steps; i++){
-        if(path[i] == 'U'){
-            level++;
+    for(int i = 0; i < steps; i++) {
+        if(path[i] == 'U') 
+        {
+            level++;  // level UP 
             
-            if(level == 0){
+            if(level == 0) {  
                 valleyes++;
             }
         } 
         else if(path[i] == 'D') {
-            level--;
+            level--;   // // level DOWN
         }
     }
     
