@@ -13,7 +13,6 @@ int main() {
     }
 
     // scan for USB
-
     for(int i=0; i<m; i++) {
         cin >> USB[i];
     }
